@@ -25,7 +25,7 @@ function calcular(){
     let imc = [18, 23, 28, 38]
     console.log("Estatura:", ALTURA, "Sexo:", SEXO, "Edad:", EDAD)
     
-    if (ALTURA>=35){
+    if (ALTURA>=35 && ALTURA<=220){
         if(SEXO==="Mujer"){
             imc[0]--
             imc[1]--
@@ -66,8 +66,8 @@ function calcular(){
                 console.log("Por favor ingrese correctamente los datos")
                 CONT2.style.display = "block"
                 RESP.innerHTML = "Ingrese correctamente los campos";
-                RESP.style.backgroundColor="#ffaaaa"
-                RESP.style.color = "red"
+                RESP.style.backgroundColor="#FFEBEE"
+                RESP.style.color = "#011627"
                 RES.style.display = "none"
                 return
             }
@@ -95,8 +95,8 @@ function calcular(){
             console.log("ERROR: ingrese todos los campos")
             CONT2.style.display = "block"
                 RESP.innerHTML = "Ingrese correctamente los campos";
-                RESP.style.backgroundColor="#ffaaaa"
-                RESP.style.color = "red"
+                RESP.style.backgroundColor="#FFEBEE"
+                RESP.style.color = "#011627"
                 RES.style.display = "none"
             return
         }
